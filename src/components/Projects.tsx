@@ -2,14 +2,14 @@ import { lazy } from "react";
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import {ArrowRight} from 'lucide-react';
+// Removed ArrowRight import as it's no longer used
 
 interface Project {
   title: string;
   description: string;
   image: string;
   technologies: string[];
-  link: string;
+  // Removed link property as it's no longer used
 }
 
 const projects: Project[] = [
@@ -18,42 +18,54 @@ const projects: Project[] = [
     description: "Developed a robust e-commerce platform with real-time inventory management and secure payment gateways.",
     image: "https://images.unsplash.com/photo-1556740738-b67664c51483?auto=format&fit=crop&w=1600&q=90",
     technologies: ["React.js", "Node.js", "MySQL"],
-    link: "#",
   },
   {
     title: "Aura Solutions",
     description: "Built a dynamic content management system (CMS) allowing seamless content creation and publishing.",
     image: "https://images.unsplash.com/photo-1542831371-29b01017dfc4?auto=format&fit=crop&w=1600&q=90",
     technologies: ["PHP", "JavaScript", "Tailwind CSS"],
-    link: "#",
   },
   {
     title: "Zenith Labs",
     description: "Created a real-time chat application using Socket.io for instant messaging, ensuring low-latency communication.",
     image: "https://images.unsplash.com/photo-1526374965328-7f66d4052efc?auto=format&fit=crop&w=1600&q=90",
     technologies: ["Next.js", "Socket.io", "Node.js"],
-    link: "#",
   },
   {
     title: "Stellar Dynamics",
     description: "Designed and implemented a data visualization dashboard for business analytics. Focused on interactive charts.",
     image: "https://images.unsplash.com/photo-1551288259-cd1072041183?auto=format&fit=crop&w=1600&q=90",
     technologies: ["HTML", "CSS", "JavaScript", "D3.js"],
-    link: "#",
   },
   {
     title: "Quantum Connect",
     description: "Developed a secure user authentication system with multi-factor authentication and role-based access control.",
     image: "https://images.unsplash.com/photo-1516110833961-787cd03816bb?auto=format&fit=crop&w=1600&q=90",
     technologies: ["Node.js", "Express", "MongoDB", "JWT"],
-    link: "#",
   },
   {
     title: "Evolve Innovations",
     description: "Crafted a mobile-first responsive landing page for a new product launch, focusing on conversion optimization.",
     image: "https://images.unsplash.com/photo-1528642474498-1af0c57f3144?auto=format&fit=crop&w=1600&q=90",
     technologies: ["React", "Tailwind CSS", "Framer Motion"],
-    link: "#",
+  },
+  {
+    title: "Synergy Hub",
+    description: "Developed a collaborative project management tool with real-time updates and task tracking.",
+    image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1600&q=90",
+    technologies: ["Vue.js", "Firebase", "SCSS"],
+  },
+  {
+    title: "Cognito AI",
+    description: "Created an AI-powered virtual assistant with natural language processing capabilities.",
+    image: "https://images.unsplash.com/photo-1507238691740-b52a2cebd18f?auto=format&fit=crop&w=1600&q=90",
+    technologies: ["Python", "Flask", "TensorFlow"],
+  },
+  {
+    title: "CloudVault",
+    description: "Built a secure, scalable cloud storage solution with file sharing and version control.",
+    image: "https://images.unsplash.com/photo-1497215729169-ec81c4f0f07c?auto=format&fit=crop&w=1600&q=90",
+    technologies: ["AWS S3", "Lambda", "React"],
   },
 ];
 
@@ -127,10 +139,7 @@ const Projects: React.FC = () => {
                     </span>
                   ))}
                 </div>
-                <a href={project.link} className="mt-4 inline-flex items-center text-indigo-600 hover:text-indigo-800 font-semibold group">
-                  View Details
-                  <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </a>
+                {/* Removed "View Details" button */}
               </div>
             </motion.div>
           ))}
