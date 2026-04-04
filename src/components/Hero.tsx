@@ -35,11 +35,11 @@ const Hero: React.FC<HeroProps> = ({ scrollTo }) => {
     <section id="hero" className="relative bg-gradient-to-br from-indigo-50 to-purple-100 py-20 md:py-32 lg:py-40 min-h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 z-0 opacity-20">
         <img
-          src="https://images.unsplash.com/photo-1510511232822-e847352377e5?auto=format&fit=crop&w=1600&q=90"
+          src="https://images.unsplash.com/photo-1490650034368-a4b08779c14f?auto=format&fit=crop&w=1600&q=90"
           alt="Abstract tech background"
-          className="w-full h-full object-cover animate-[spin_30s_linear_infinite]"
+          className="w-full h-full object-cover"
           loading="lazy"
-          onError={(e: React.SyntheticEvent<HTMLImageElement, Event>) => (e.currentTarget.src = 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1600&q=90')}
+          onError={(e: React.SyntheticEvent<HTMLImageElement, Event>) => (e.currentTarget.src = 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1600&q=90')}
         />
       </div>
       <motion.div
