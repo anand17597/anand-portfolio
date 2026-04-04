@@ -61,9 +61,9 @@ const Navbar: React.FC<NavbarProps> = ({ navLinks, scrollTo }) => {
       )}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-20"> {/* Changed h-16 to h-20 */}
           <div className="flex items-center">
-            <button onClick={() => scrollTo("hero")} className="flex-shrink-0 text-2xl font-bold text-indigo-600 focus:outline-none">
+            <button onClick={() => scrollTo("hero")} className="inline-flex items-center py-2 flex-shrink-0 text-2xl font-bold text-indigo-600 focus:outline-none">
               Anandhan <span className="text-gray-900">V</span>
             </button>
           </div>
@@ -73,7 +73,7 @@ const Navbar: React.FC<NavbarProps> = ({ navLinks, scrollTo }) => {
                 key={link.id}
                 onClick={() => handleNavLinkClick(link.id)}
                 className={cn(
-                  "text-lg font-medium hover:text-indigo-600 transition-colors focus:outline-none",
+                  "inline-flex items-center py-2 text-lg font-medium hover:text-indigo-600 transition-colors focus:outline-none",
                   activeSection === link.id ? "text-indigo-600 font-semibold" : "text-gray-600"
                 )}
               >
