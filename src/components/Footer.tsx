@@ -12,7 +12,7 @@ const Footer: React.FC<FooterProps> = ({ scrollTo }) => {
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 text-center md:text-left">
           <div>
             <h3 className="text-xl font-semibold text-white mb-4">Anandhan V</h3>
-            <p className="text-gray-400 leading-relaxed">Full-Stack Developer passionate about creating impactful web solutions.</p>
+            <p className="text-gray-400 leading-relaxed">Full-Stack & iOS Developer passionate about creating impactful web and mobile solutions.</p>
           </div>
           <div>
             <h3 className="text-lg font-semibold text-white mb-4">Quick Links</h3>
