@@ -35,8 +35,8 @@ const Hero: React.FC<HeroProps> = ({ scrollTo }) => {
     <section id="hero" className="relative bg-gradient-to-br from-indigo-50 to-purple-100 py-20 md:py-32 lg:py-40 min-h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 z-0 opacity-20">
         <img
-          src="https://images.unsplash.com/photo-1490650034368-a4b08779c14f?auto=format&fit=crop&w=1600&q=90"
-          alt="Abstract tech background"
+          src="https://d3dnd7j639hmiz.cloudfront.net/sites/anand-portfolio/hero/1e9e209d-d44d-4da6-b215-5e2a11fe115d.jpg"
+          alt="Anandhan V at his desk"
           className="w-full h-full object-cover"
           loading="lazy"
           onError={(e: React.SyntheticEvent<HTMLImageElement, Event>) => (e.currentTarget.src = 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1600&q=90')}
@@ -50,7 +50,7 @@ const Hero: React.FC<HeroProps> = ({ scrollTo }) => {
         className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10"
       >
         <motion.h1 variants={itemVariants} className="text-4xl sm:text-5xl lg:text-7xl font-extrabold tracking-tight text-gray-900 leading-tight">
-          Anandhan V <br className="sm:hidden" /> <span className="text-indigo-600">Full-Stack Developer</span>
+          Anandhan V <br className="sm:hidden" /> <span className="text-indigo-600">Full-Stack & iOS Developer</span>
         </motion.h1>
         <motion.p variants={itemVariants} className="mt-6 text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
           Crafting digital experiences with <span className="font-semibold text-indigo-700">5+ years of expertise</span> in web development.
