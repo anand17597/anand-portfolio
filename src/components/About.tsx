@@ -49,7 +49,7 @@ const About: React.FC = () => {
             variants={imageVariants}
           >
             <img
-              src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=1600&q=90"
+              src="https://d3dnd7j639hmiz.cloudfront.net/sites/anand-portfolio/about-me/57be7aef-ee4f-4000-9abb-25b5f1c7232d.jpeg"
               alt="Anandhan V working on a computer"
               className="rounded-xl shadow-2xl w-full max-w-lg md:max-w-none h-auto object-cover transform hover:scale-105 transition-transform duration-500"
               loading="lazy"
