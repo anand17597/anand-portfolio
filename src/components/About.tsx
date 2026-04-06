@@ -32,7 +32,7 @@ const About: React.FC = () => {
           >
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">About Me</h2>
             <p className="text-lg text-gray-700 leading-relaxed mb-4">
-              With over <span className="font-semibold text-indigo-600">5 years of hands-on experience</span>, I am a passionate Full-Stack Developer dedicated to building robust and scalable web applications. My expertise spans both front-end and back-end technologies, allowing me to deliver comprehensive solutions from concept to deployment.
+              With over <span className="font-semibold text-indigo-600">5 years of hands-on experience</span>, I am a passionate Full-Stack and iOS Developer dedicated to building robust and scalable web and mobile applications. My expertise spans both front-end and back-end technologies, allowing me to deliver comprehensive solutions from concept to deployment.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed mb-4">
               I thrive in dynamic environments, constantly learning and applying new technologies to create efficient, user-friendly, and high-performance digital products. My goal is to transform complex ideas into elegant and functional web solutions that drive business success.
